@@ -15,5 +15,8 @@
       },
     },
     `gatsby-transformer-remark`
-  ]
+  ],
+  flags: {
+    DEV_SSR: false
+  }
 }
