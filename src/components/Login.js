@@ -11,6 +11,9 @@ const config = {
   authParams: {
     issuer: 'https://dev-82202657.okta.com/oauth2/default',
     scopes: ['openid', 'email', 'profile']
+  },
+  features: {
+    registration: true
   }
 };
 
