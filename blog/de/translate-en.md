@@ -1,5 +1,5 @@
 ---
-path: translated=de
+path: translated-de
 date: 2021-06-06T12:29:02.436Z
 title: translate-en
 ---
