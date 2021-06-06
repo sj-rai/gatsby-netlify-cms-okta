@@ -1,5 +1,7 @@
 ---
+path: /blog/fr/translated-fr
 date: 2021-06-06T12:29:02.436Z
-title: translate-en
+title: translate-fr
 ---
-translate en. This is english
+Hello.
+Translate en. This is french
