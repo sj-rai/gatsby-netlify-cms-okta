@@ -3,16 +3,77 @@ backend:
   repo: sj-rai/gatsby-netlify-cms-okta
   branch: master
   
+#i18n:
+#  structure: multiple_folders
+#  locales: [en, de, fr]
+
 media_folder: static/assets
 public_folder: assets
   
+#collections:
+#  - name: blog
+#    label: Blog
+#    folder: blog
+#    create: true
+#    i18n: true
+#    fields:
+##      - { name: path, label: Path, i18n: true }
+##      - { name: date, label: Date, widget: datetime, i18n: true }
+##      - { name: title, label: Title, i18n: true }
+##      - { name: body, label: Body, widget: markdown, i18n: true }
+#      - label: "Tags"
+#        name: "tags"
+#        widget: "list"
+#        default: [ "news" ]
+##        folder: blog
+##        create: true
+##        field: {label: Image, name: image, widget: image}
+#        types:
+#          - label: 'Carousel'
+#            name: 'carousel'
+#            widget: object
+#            summary: '{{fields.header}}'
+#            fields:
+#              - { label: Header, name: header, widget: string, default: 'Image Gallery' }
+#              - { label: Template, name: template, widget: string, default: 'carousel.html' }
+#              - label: Images
+#                name: images
+#                widget: list
+#                field: { label: Image, name: image, widget: image }
+#          - label: 'Spotlight'
+#            name: 'spotlight'
+#            widget: object
+#            fields:
+#              - { label: Header, name: header, widget: string, default: 'Spotlight' }
+#              - { label: Template, name: template, widget: string, default: 'spotlight.html' }
+#              - { label: Text, name: text, widget: text, default: 'Hello World' }
 collections:
-  - name: blog
-    label: Blog
+  - label: 'Home Section'
+    name: 'sections'
+    widget: 'list'
     folder: blog
     create: true
+#    files: [{}]
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - label: 'Home Section'
+        name: 'sections'
+        widget: 'list'
+        types:
+          - label: 'Carousel'
+            name: 'carousel'
+            widget: object
+            summary: '{{fields.header}}'
+            fields:
+              - { label: Header, name: header, widget: string, default: 'Image Gallery' }
+              - { label: Template, name: template, widget: string, default: 'carousel.html' }
+              - label: Images
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }
+          - label: 'Spotlight'
+            name: 'spotlight'
+            widget: object
+            fields:
+              - { label: Header, name: header, widget: string, default: 'Spotlight' }
+              - { label: Template, name: template, widget: string, default: 'spotlight.html' }
+              - { label: Text, name: text, widget: text, default: 'Hello World' }
